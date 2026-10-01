@@ -7,7 +7,7 @@ bool primo(int n) {
         if ((n%i)==0) {
             divisores++;
         }
-    }
+    #}
 
     if (divisores==2) {
         return true;
