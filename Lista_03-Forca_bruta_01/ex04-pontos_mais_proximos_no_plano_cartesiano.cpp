@@ -13,8 +13,8 @@ double distancia(const vector<pair<int, int>>& coordenadas, int i, int j) {
     return sqrt(dx * dx + dy * dy);
 }
 
-struct resultado {
-    int p1;
+struct resultado { //cria um tipo de variável resultado (p1,p2,distancia)
+    int p1; // recebe uma coordenada (x,y)
     int p2;
     double distancia;
 };
@@ -63,7 +63,7 @@ int main() {
 
     resultado resultado = menor(coordenadas, n);
 
-cout << "Pontos mais próximos: ("
+    cout << "Pontos mais próximos: ("
          << coordenadas[resultado.p1].first << ", "<< coordenadas[resultado.p1].second << ") e ("<< coordenadas[resultado.p2].first << ", "<< coordenadas[resultado.p2].second << ")\n";
 
     cout << "Distância: " << resultado.distancia << endl;
